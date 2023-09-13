@@ -9,46 +9,57 @@
     <h1>In this project I learned how to display images in different projections</h1>
     
     <h2 style="color:red">Describe in your own words how you displayed the map in different projections using QGIS</h2>
-    <p>You can write a paragraph here</p>
+    <p>Using QGIS, I displayed different projections through the Coordinate Reference System settings and the Globe Builder plugin.</p>
     
     <h2>WGS84 Projection - 4326</h2>
-    <h3>Some observations</h3>
-    <a href=".//maps/espg-4326.png">
-    <img src=".//maps/espg-4326.png" alt="WGS84" width='500px'>
-    </a>
+        <h3>Some observations:</h3>
+        <li>Shape becomes distorted closer to the poles.</li>
+        <li>Area is mainly distorted along latitude.</li>
+        <li>Stretched out horizontally closer to poles.</li>
+        <a href=".//maps/espg-4326.png">
+        <img src=".//maps/espg-4326.png" alt="WGS84" width='500px'>
+        </a>
     <h2>Aitoff Projection - 54043</h2>
-    <h3>Some observations</h3>
-    <a href=".//maps/espg-54043.png">
-    <img src=".//maps/espg-54043.png" alt="Aitoff" width='500px'>
-    </a>
+        <h3>Some observations</h3>
+        <li>Both area and shape are distorted.</li>
+        <li>Area closer to poles and near International Dateline is enlarged</li>
+        <a href=".//maps/espg-54043.png">
+        <img src=".//maps/espg-54043.png" alt="Aitoff" width='500px'>
+        </a>
     <h2>Pseudo Mercator - 3857</h2>
-    <h3>Some observations</h3>
-    <a href=".//maps/epsg-3857.png">
-    <img src=".//maps/epsg-3857.png" alt="Pseudo Mercator" width='500px'>
-    </a>
+        <h3>Some observations</h3>
+        <li>Shape is well preserved.</li>
+        <li>Area is distorted towards poles.</li>
+        <a href=".//maps/epsg-3857.png">
+        <img src=".//maps/epsg-3857.png" alt="Pseudo Mercator" width='500px'>
+        </a>
     <h2>Sphere Winkel - 53018</h2>
-    <h3>Some observations</h3>
-    <a href=".//maps/esri-53018.png">
-    <img src=".//maps/esri-53018.png" alt="Sphere Winkel" width='500px'>
+        <h3>Some observations</h3>
+        <li>Both shape and area are distorted.</li>
+        <a href=".//maps/esri-53018.png">
+        <img src=".//maps/esri-53018.png" alt="Sphere Winkel" width='500px'>
+        </a>
     <h2>Cylindrical - 54034</h2>
-    <h3>Some observations</h3>
-    <a href=".//maps/esri-54034.png">
-    <img src=".//maps/esri-54034.png" alt="Cylindrical" width='500px'>
+        <h3>Some observations</h3>
+        <li>Shape is distorted toward poles.</li>
+        <a href=".//maps/esri-54034.png">
+        <img src=".//maps/esri-54034.png" alt="Cylindrical" width='500px'>
+        </a>
     <h2>Conic - 54027</h2>
-    <h3>Some observations</h3>
-    <a href=".//maps/esri-54027.png">
-    <img src=".//maps/esri-54027.png" alt="Conic" width='500px'>
+        <h3>Some observations</h3>
+        <li>Distortion of shape and area gradually increases as you go furher south.</li>
+        <a href=".//maps/esri-54027.png">
+        <img src=".//maps/esri-54027.png" alt="Conic" width='500px'>
+        </a>
     <h2>North Pole Azimuthal - 102016</h2>
-    <h3>Some observations</h3>
-    <a href=".//maps/esri-102016.png">
-    <img src=".//maps/esri-102016.png" alt="North Pole Azimuthal" width='500px'>
+        <h3>Some observations</h3>
+        <li>Shape is drastically distorted at southernmost point.</li>
+        <a href=".//maps/esri-102016.png">
+        <img src=".//maps/esri-102016.png" alt="North Pole Azimuthal" width='500px'>
+        </a>
     <h2>World Robinson - 54030</h2>
     <h3>Some observations</h3>
     <a href=".//maps/esri-54030.png">
     <img src=".//maps/esri-54030.png" alt="World Robinson" width='500px'>
-<h2 style="color:red">Now, you should <u>add the following projections on your own:</u></h2>
-    <h3>two additional projections that you choose.</h3>
-    <h2>Data used for this project</h2>
-    <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
 </body>
 </html>
