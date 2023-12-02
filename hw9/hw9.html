@@ -26,14 +26,14 @@
     <p><a href="https://developers.google.com/earth-engine/datasets/catalog/WCMC_WDPA_current_polygons">WDPA: World Database on Protected Areas (polygons)</a></p>
     <br>
 <p>Using the WDPA dataset and a shapefile of Vermont counties, I filtered the shapefile to only view Barre County.</p>
-        <p style="margin-left: 40px">var barre = counties.filter(ee.Filter.eq('NAME', 'Barre'));</p>
-        <p style="margin-left: 40px">Map.addLayer(barre, {color: 'blue'}, 'Barre County');</p>
+        <p style="margin-left: 40px; font-family:courier">var barre = counties.filter(ee.Filter.eq('NAME', 'Barre'));</p>
+        <p style="margin-left: 40px; font-family:courier">Map.addLayer(barre, {color: 'blue'}, 'Barre County');</p>
     <p>Then, I added a layer representing the protected areas from the WDPA dataset and clipped it to Barre County</p>
-        <p style="margin-left: 40px">var image = ee.Image().float().paint(proc, 'REP_AREA');</p>
-        <p style="margin-left: 40px">var procBarre = image.clip(barre);</p>
-        <p style="margin-left: 40px">Map.addLayer(procBarre, {palette: ['014636', '016c59']}, 'Protected Area');</p>
+        <p style="margin-left: 40px; font-family:courier">var image = ee.Image().float().paint(proc, 'REP_AREA');</p>
+        <p style="margin-left: 40px; font-family:courier">var procBarre = image.clip(barre);</p>
+        <p style="margin-left: 40px; font-family:courier">Map.addLayer(procBarre, {palette: ['014636', '016c59']}, 'Protected Area');</p>
     <p>I then created a layer to generate a gradient representing distance from the protected areas in and around Barre County.</p>
-        <p style="margin-left: 40px">Map.addLayer(proc.distance().clip(barre),{min:0, max:4000, palette: ['810f7c', '8856a7', '8c96c6', 'b3cde3', 'edf8fb']}, 'Protected Distance');</p>
+        <p style="margin-left: 40px; font-family:courier">Map.addLayer(proc.distance().clip(barre),{min:0, max:4000, palette: ['810f7c', '8856a7', '8c96c6', 'b3cde3', 'edf8fb']}, 'Protected Distance');</p>
 
 <br>
 <a href="https://salemar.github.io/salemgeog/"><h2>Home</h2></a>
