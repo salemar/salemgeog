@@ -12,10 +12,10 @@
 <br>
 <h3>Distance from protected areas in Barre County, Vermont</h3>
     <a href="./gee-prtsc-hw9.png">
-        <img src="./gee-prtsc-hw9.png" alt="Map of Barre County, Vermont. Small green feature in lower right (Southeast) corner of county representing protected area. Purple gradient becomes white with increasing distance from protected area.">
+        <img src="./gee-prtsc-hw9.png" alt="Map of Barre County, Vermont. Small green feature in lower right (Southeast) corner of county representing protected area. Purple gradient becomes white with increasing distance from protected area." class="center">
         </a>
-    <a href="https://code.earthengine.google.com/a5e24e086fb97ee7de7de121ecdfd0b0">GEE snapshot</a>
-    <a href="https://developers.google.com/earth-engine/datasets/catalog/WCMC_WDPA_current_polygons">WDPA: World Database on Protected Areas (polygons)</a>
+    <p><a href="https://code.earthengine.google.com/a5e24e086fb97ee7de7de121ecdfd0b0">GEE snapshot</a></p>
+    <p><a href="https://developers.google.com/earth-engine/datasets/catalog/WCMC_WDPA_current_polygons">WDPA: World Database on Protected Areas (polygons)</a></p>
     <br>
 <p>Using the WDPA dataset and a shapefile of Vermont counties, I filtered the shapefile to only view Barre County.</p>
         <p style="margin-left: 40px">var barre = counties.filter(ee.Filter.eq('NAME', 'Barre'));</p>
